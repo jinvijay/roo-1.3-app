@@ -1,0 +1,15 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2020-09-21 00:17:55
+hint
+project --topLevelPackage com.jin.rooapp13
+osgi ps
+hint
+jpa setup --database ORACLE --provider HIBERNATE 
+hint
+database introspect --schema foodie 
+database reverse engineer --schema foodie 
+hint
+hint
+hint 
+web mvc setup
+web mvc all --package ~.web
+perform command --mavenCommand tomcat7:run

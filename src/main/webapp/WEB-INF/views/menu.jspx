@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_menusectionfood" z="vCBo6i8ymdsGSX5jyi8jU5IPv50=">
+            <menu:item id="i_menusectionfood_new" messageCode="global_menu_new" url="/menusectionfoods?form" z="bRBVpCrK8jNDkkyLMO2IeKqmc98="/>
+            <menu:item id="i_menusectionfood_list" messageCode="global_menu_list" url="/menusectionfoods?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XUxshEKASqdjsOPAqNDVnOczS6I="/>
+        </menu:category>
+        <menu:category id="c_food" z="KQDZ7wXZ1Wa73XlJlk4AJW31DlI=">
+            <menu:item id="i_food_new" messageCode="global_menu_new" url="/foods?form" z="k4OJIwluP52PLhY6M0og4jGS7qA="/>
+            <menu:item id="i_food_list" messageCode="global_menu_list" url="/foods?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aD5S4FS7txlMbkru21BULvWF92M="/>
+        </menu:category>
+        <menu:category id="c_menusection" z="wd/rAYmkRfGiLl2e3v+r1cS1bw0=">
+            <menu:item id="i_menusection_new" messageCode="global_menu_new" url="/menusections?form" z="BulpCcL+FetoxfEeMsi4MRBnnHI="/>
+            <menu:item id="i_menusection_list" messageCode="global_menu_list" url="/menusections?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VEabDaYCTsmTMw5C4DNDn9jVuBw="/>
+        </menu:category>
+    </menu:menu>
+</div>

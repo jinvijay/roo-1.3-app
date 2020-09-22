@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_jin_rooapp13_MenuSectionFood" object="${menusectionfood}" path="/menusectionfoods" z="FVqqh5RwDw+7GOQt+7u7RSyy+lc=">
+        <field:display field="foodId" id="s_com_jin_rooapp13_MenuSectionFood_foodId" object="${menusectionfood}" z="p9JFbZBi9ykdcDl2vgRt/AA8iYg="/>
+        <field:display field="sectionId" id="s_com_jin_rooapp13_MenuSectionFood_sectionId" object="${menusectionfood}" z="5sGdowq4mK/e7kOGodH8HtPRH/0="/>
+    </page:show>
+</div>

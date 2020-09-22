@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_jin_rooapp13_MenuSectionFood" modelAttribute="menuSectionFood" path="/menusectionfoods" versionField="Version" z="Fjrqlb7al8hQcCRGDANjG2PDVTQ=">
+        <field:select field="foodId" id="c_com_jin_rooapp13_MenuSectionFood_foodId" itemValue="id" items="${foods}" path="/foods" z="GE1/iX60KvhudHh0Dptmy4jlTSY="/>
+        <field:select field="sectionId" id="c_com_jin_rooapp13_MenuSectionFood_sectionId" itemValue="id" items="${menusections}" path="/menusections" z="Okfmc5zbgoi8u8+tPC/WbixThEw="/>
+    </form:update>
+</div>
