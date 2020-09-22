@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
@@ -20,7 +21,8 @@ privileged aspect Food_Roo_Jpa_Entity {
     declare @type: Food: @Table(schema = "FOODIE", name = "FOOD");
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @SequenceGenerator(name = "foodGen", sequenceName = "FOOD_SEQ")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "foodGen")
     @Column(name = "ID")
     private BigDecimal Food.id;
     

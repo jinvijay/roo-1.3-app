@@ -5,7 +5,7 @@ import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
-@RooJpaActiveRecord(table = "MENU_SECTION_FOOD", schema = "FOODIE")
+@RooJpaActiveRecord(table = "MENU_SECTION_FOOD", schema = "FOODIE", sequenceName = "MENU_SECTION_FOOD_SEQ")
 @RooDbManaged(automaticallyDelete = true)
 @RooToString(excludeFields = { "foodId", "sectionId" })
 public class MenuSectionFood {
