@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
@@ -20,7 +21,8 @@ privileged aspect MenuSection_Roo_Jpa_Entity {
     declare @type: MenuSection: @Table(schema = "FOODIE", name = "MENU_SECTION");
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @SequenceGenerator(name = "menuSectionGen", sequenceName = "MENU_SECTION_SEQ")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "menuSectionGen")
     @Column(name = "ID")
     private BigDecimal MenuSection.id;
     
